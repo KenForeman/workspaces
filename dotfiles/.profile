@@ -14,6 +14,9 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+## fzf Ctrl-R history goodness
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 ## Visual Studio Code goodness: https://code.visualstudio.com/docs/setup/mac
 
 alias egrep='egrep --color=auto'
