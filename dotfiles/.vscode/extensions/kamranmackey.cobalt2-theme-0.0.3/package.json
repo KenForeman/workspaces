@@ -1,0 +1,28 @@
+{
+	"name": "cobalt2-Theme",
+	"displayName": "Cobalt2 Theme",
+	"description": "Tweaked and refined theme based on the original cobalt. ",
+	"version": "0.0.3",
+	"publisher": "kamranmackey",
+	"icon": "icon.svg",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Cobalt2",
+				"uiTheme": "vs-dark",
+				"path": "./themes/cobalt2.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5ef9056d-7b52-40a9-8cda-156fb9e5ce7a",
+		"publisherId": "7b7eca0e-4589-4dab-94d2-b4426c754601",
+		"publisherDisplayName": "kamranmackey"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"name": "theme-lei",
+	"displayName": "Lei Theme",
+	"description": "Theme for JavaScript, TypeScript and Web Developer base on default Light & Dark theme.",
+	"version": "1.6.4",
+	"publisher": "leizongmin",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/leizongmin/lei-theme-vscode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leizongmin/lei-theme-vscode.git"
+	},
+	"icon": "icon.png",
+	"files": [
+		"icon.png",
+		"themes"
+	],
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Lei Light",
+				"uiTheme": "vs",
+				"path": "./themes/lei_light.json"
+			},
+			{
+				"label": "Lei Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/lei_dark.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "615094af-b033-4268-b1ad-964181f8eefa",
+		"publisherId": "eb81807c-3252-427c-93c1-7562325b8534",
+		"publisherDisplayName": "Zongmin Lei"
+	}
+}

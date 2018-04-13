@@ -1,0 +1,33 @@
+{
+	"name": "Theme-textmate",
+	"displayName": "textmate Theme",
+	"description": "textmate Theme ported from the textmate TextMate Theme",
+	"version": "0.0.2",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-textmate/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "textmate",
+				"uiTheme": "vs",
+				"path": "./themes/textmate.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "41ddcbd6-9c7e-4f8d-a428-4d521b491729",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

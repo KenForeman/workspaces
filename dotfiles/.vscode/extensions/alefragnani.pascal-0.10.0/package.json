@@ -1,0 +1,149 @@
+{
+	"name": "pascal",
+	"displayName": "Language Pascal",
+	"description": "Pascal support for Visual Studio Code",
+	"version": "0.10.0",
+	"publisher": "alefragnani",
+	"galleryBanner": {
+		"color": "#4682B4",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Languages",
+		"Snippets",
+		"Formatters",
+		"Other"
+	],
+	"keywords": [
+		"pascal",
+		"delphi",
+		"freepascal",
+		"lazarus",
+		"formatter",
+		"multi-root ready"
+	],
+	"activationEvents": [
+		"onLanguage:pascal",
+		"onCommand:pascal.editFormatterParameters"
+	],
+	"main": "./out/src/extension",
+	"icon": "images/icon.png",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"homepage": "https://github.com/alefragnani/vscode-language-pascal/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alefragnani/vscode-language-pascal.git"
+	},
+	"bugs": {
+		"url": "https://github.com/alefragnani/vscode-language-pascal/issues"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "pascal",
+				"aliases": [
+					"Pascal",
+					"pascal"
+				],
+				"extensions": [
+					".pas",
+					".p",
+					".dfm",
+					".dpr",
+					".dpk",
+					".lfm",
+					".dpr"
+				],
+				"configuration": "./pascal.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "pascal",
+				"scopeName": "source.pascal",
+				"path": "./syntaxes/pascal.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "pascal",
+				"path": "./snippets/pascal.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "pascal.editFormatterParameters",
+				"title": "Pascal: Edit Formatter Parameters"
+			},
+			{
+				"command": "pascal.generateTags",
+				"title": "Pascal: Generate Tags"
+			},
+			{
+				"command": "pascal.updateTags",
+				"title": "Pascal: Update Tags"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Pascal Formatter Configuration",
+			"properties": {
+				"pascal.formatter.engine": {
+					"type": "string",
+					"default": "",
+					"description": "Choose the Formatter engine to be used",
+					"enum": [
+						"jcf",
+						"ptop"
+					]
+				},
+				"pascal.formatter.enginePath": {
+					"type": "string",
+					"default": "",
+					"description": "Indicates the Formatter app path"
+				},
+				"pascal.formatter.engineParameters": {
+					"type": "string",
+					"default": "",
+					"description": "Indicates the configuration file for the selected engine"
+				},
+				"pascal.format.indent": {
+					"type": "number",
+					"default": 2,
+					"description": "The number of spaces used for indentation"
+				},
+				"pascal.format.wrapLineLength": {
+					"type": "number",
+					"default": 80,
+					"description": "Maximum amount of characters per line"
+				},
+				"pascal.tags.autoGenerate": {
+					"type": "boolean",
+					"default": true,
+					"description": "Controls if the extension should automatically generate tags in projects opened for the first time"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"dependencies": {
+		"opener": "~1.4.1"
+	},
+	"devDependencies": {
+		"@types/node": "^6.0.40",
+		"typescript": "^2.3.2",
+		"vscode": "^1.1.6"
+	},
+	"__metadata": {
+		"id": "30557e54-0390-4524-bd96-457b7ee35fc7",
+		"publisherId": "3fbdef65-bdf5-4723-aeaf-9e12a50546ef",
+		"publisherDisplayName": "Alessandro Fragnani"
+	}
+}

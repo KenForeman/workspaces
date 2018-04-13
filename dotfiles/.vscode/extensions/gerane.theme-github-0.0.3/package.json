@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Github",
+	"displayName": "Github Theme",
+	"description": "Github Theme ported from the Github TextMate Theme",
+	"version": "0.0.3",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Github/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Github",
+				"uiTheme": "vs",
+				"path": "./themes/Github.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "30c651d9-1f31-42ef-90d1-c46af7bb527f",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"name": "enki-theme-vscode",
+	"displayName": "Enki Theme",
+	"description": "Enki Theme - A dark theme for Sublime Text ported to Visual Studio Code",
+	"version": "0.1.0",
+	"license": "MIT",
+	"publisher": "dorelljames",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "static/images/icon.png",
+	"galleryBanner": {
+		"color": "#1a1b20",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Enki",
+				"uiTheme": "vs-dark",
+				"path": "./scheme/Enki.tmTheme"
+			},
+			{
+				"label": "Enki Alt",
+				"uiTheme": "vs-dark",
+				"path": "./scheme/Enki-Alt.tmTheme"
+			},
+			{
+				"label": "Enki Light",
+				"uiTheme": "vs-light",
+				"path": "./scheme/Enki-Light.tmTheme"
+			},
+			{
+				"label": "Enki Aster",
+				"uiTheme": "vs-dark",
+				"path": "./scheme/Enki-Aster.tmTheme"
+			},
+			{
+				"label": "Enki Aster Red",
+				"uiTheme": "vs-dark",
+				"path": "./scheme/Enki-Aster-red.tmTheme"
+			},
+			{
+				"label": "Enki Old",
+				"uiTheme": "vs-dark",
+				"path": "./scheme/Enki-old.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "946c164c-2335-4cc1-8ed5-e55cb3a11e43",
+		"publisherId": "2178be33-5249-4587-81ce-5ab804db56c2",
+		"publisherDisplayName": "Dorell James Galang"
+	}
+}

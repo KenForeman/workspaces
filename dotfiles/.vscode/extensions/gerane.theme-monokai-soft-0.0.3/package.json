@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Monokai-Soft",
+	"displayName": "Monokai-Soft Theme",
+	"description": "Monokai-Soft Theme ported from the Monokai-Soft TextMate Theme",
+	"version": "0.0.3",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Monokai-Soft/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Monokai-Soft",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai-Soft.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "ca44c774-dd7e-4318-99d8-4ed9a35e96d3",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

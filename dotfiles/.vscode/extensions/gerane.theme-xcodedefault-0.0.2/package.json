@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Xcodedefault",
+	"displayName": "Xcode_default Theme",
+	"description": "Xcode_default Theme ported from the Xcodedefault TextMate Theme",
+	"version": "0.0.2",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Xcode_default/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Xcode_default",
+				"uiTheme": "vs",
+				"path": "./themes/Xcode_default.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4596c582-3d46-4a1e-a876-60bcf5553d21",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

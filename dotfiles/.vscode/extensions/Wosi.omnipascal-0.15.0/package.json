@@ -1,0 +1,134 @@
+{
+	"name": "omnipascal",
+	"version": "0.15.0",
+	"publisher": "Wosi",
+	"displayName": "OmniPascal - Open Preview",
+	"description": "Delphi and FPC support. Including code completion, declaration support, outlining, snippets, syntax highlighting and more.",
+	"categories": [
+		"Languages",
+		"Snippets",
+		"Linters",
+		"Other"
+	],
+	"icon": "img/omnipascal-icon128x128.png",
+	"galleryBanner": {
+		"color": "#161616",
+		"theme": "dark"
+	},
+	"bugs": {
+		"url": "https://bitbucket.org/Wosi/omnipascalissues/issues"
+	},
+	"homepage": "https://www.omnipascal.com",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"activationEvents": [
+		"onLanguage:objectpascal",
+		"onCommand:omnipascal.loadProject"
+	],
+	"main": "./objectpascalMain",
+	"contributes": {
+		"languages": [
+			{
+				"id": "objectpascal",
+				"extensions": [
+					".pas",
+					".dpr",
+					".pp",
+					".lpr",
+					".inc"
+				],
+				"aliases": [
+					"ObjectPascal",
+					"pascal",
+					"Delphi",
+					"delphi"
+				],
+				"mimetypes": [
+					"text/x-objectpascal-source",
+					"text/x-objectpascal"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "objectpascal",
+				"path": "./snippets/objectpascal.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "objectpascal",
+				"scopeName": "source.objectpascal",
+				"path": "./syntaxes/objectpascal.plist"
+			}
+		],
+		"commands": [
+			{
+				"command": "omnipascal.addUses",
+				"title": "OmniPascal: Add unit to uses"
+			},
+			{
+				"command": "omnipascal.loadProject",
+				"title": "OmniPascal: Load project"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "omnipascal.addUses",
+				"key": "alt+u",
+				"when": "editorTextFocus && !editorReadonly && editorLangId == 'objectpascal'"
+			}
+		],
+		"configuration": {
+			"title": "OmniPascal configuration",
+			"type": "object",
+			"properties": {
+				"omnipascal.delphiInstallationPath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to the Delphi installation. Example: C:\\Program Files (x86)\\Embarcadero\\Studio\\18.0. If this value is empty, OmniPascal will try to find the path by itself."
+				},
+				"omnipascal.freePascalSourcePath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to the Free Pascal source files. Example: C:\\lazarus\\fpc\\3.0.0"
+				},
+				"omnipascal.defaultDevelopmentEnvironment": {
+					"type": "string",
+					"default": "Delphi",
+					"enum": [
+						"Delphi",
+						"FreePascal"
+					],
+					"description": "Defines the default development environment when no project is loaded"
+				},
+				"omnipascal.searchPath": {
+					"type": "string",
+					"default": "",
+					"description": "Search paths in addition to \"omnipascal.delphiInstallationPath\"/\"omnipascal.freePascalSourcePath\" and the current workspace. Separate paths with ';'. TIP: Paths ending with '*' will include all subdirectories recursively!"
+				},
+				"omnipascal.msbuildPath": {
+					"type": "string",
+					"default": "",
+					"description": "Full path to MSBuild.exe used to build a Delphi .dproj file. If this value is empty, OmniPascal will try to find the path by itself."
+				},
+				"omnipascal.lazbuildPath": {
+					"type": "string",
+					"default": "",
+					"description": "Full path to lazbuild.exe used to build a Lazarus .lpi file."
+				},
+				"omnipascal.createBuildScripts": {
+					"type": "boolean",
+					"default": false,
+					"description": "Specifies whether OmniPascal will create tasks.json and a build script when a project is loaded"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "5b678ca2-9961-4b6e-814f-03cda0d320e7",
+		"publisherDisplayName": "Wosi",
+		"publisherId": "9654892a-bb9d-4b06-a962-e7b720dfd5b9"
+	}
+}
