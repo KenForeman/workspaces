@@ -21,6 +21,7 @@ fi
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias rgrep='grep --color=auto -Iir $1'
 alias grep='grep --color=auto'
 alias grepno="grep --color=never -n -E '.*'"
 alias ls='ls -G'
