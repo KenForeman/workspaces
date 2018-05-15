@@ -1,0 +1,58 @@
+{
+	"name": "vscode-git-grep",
+	"displayName": "vscode-git-grep",
+	"description": "git grep for vscode",
+	"version": "0.0.7",
+	"publisher": "bokuweb",
+	"engines": {
+		"vscode": "^1.6.0"
+	},
+	"author": {
+		"name": "bokuweb",
+		"email": "bokuweb12@gmail.com"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/bokuweb/vscode-git-grep/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bokuweb/vscode-git-grep"
+	},
+	"icon": "docs/logo.png",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.gitGrep"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.gitGrep",
+				"title": "Git: Grep"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.3.0",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"dependencies": {
+		"shell-escape": "^0.2.0",
+		"shell-quote": "^1.6.1"
+	},
+	"__metadata": {
+		"id": "0c518afb-f48f-4b98-b0ce-fcd304de7e62",
+		"publisherId": "bd77ac39-51f0-42e2-9e8b-60f223a67b11",
+		"publisherDisplayName": "bokuweb"
+	}
+}

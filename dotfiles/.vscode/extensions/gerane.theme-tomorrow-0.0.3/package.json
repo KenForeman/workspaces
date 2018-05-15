@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Tomorrow",
+	"displayName": "Tomorrow Theme",
+	"description": "Tomorrow Theme ported from the Tomorrow TextMate Theme",
+	"version": "0.0.3",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Tomorrow/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Tomorrow",
+				"uiTheme": "vs",
+				"path": "./themes/Tomorrow.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f5c39753-7ea6-43b8-af16-61b966884251",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

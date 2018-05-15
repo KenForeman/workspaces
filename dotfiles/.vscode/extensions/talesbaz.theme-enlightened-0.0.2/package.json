@@ -1,0 +1,27 @@
+{
+	"name": "theme-enlightened",
+	"displayName": "enlightened Theme",
+	"description": "enlightened Theme for VS Code",
+	"version": "0.0.2",
+	"publisher": "talesbaz",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "enlightened",
+				"uiTheme": "vs-dark",
+				"path": "./themes/enlight.tema.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "ec9cacbb-37e0-40f7-a376-baf8564e77b3",
+		"publisherId": "9dfabeca-9477-421a-9818-adc0e73ae62f",
+		"publisherDisplayName": "talesbaz"
+	}
+}

@@ -1,0 +1,544 @@
+{
+/*
+	 // Place your snippets for ObjectPascal here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+  "var": {
+		"prefix": "var",
+		"body": [
+			"var" 
+		],
+		"description": "var"
+	}, 
+	
+  "const": {
+		"prefix": "const",
+		"body": [
+			"const" 
+		],
+		"description": "const"
+	},  
+	
+  "out": {
+		"prefix": "out",
+		"body": [
+			"out" 
+		],
+		"description": "out"
+	},  
+	
+  "exit": {
+		"prefix": "exit",
+		"body": [
+			"exit" 
+		],
+		"description": "exit"
+	}, 
+
+  "raise": {
+		"prefix": "raise",
+		"body": [
+			"raise;" 
+		],
+		"description": "raise"
+	},  
+	
+  "raise Exception.Create": {
+		"prefix": "raise Exception.Create",
+		"body": [
+			"raise ${Exception}.Create('${ErrorMessage}');" 
+		],
+		"description": "raise Exception.Create"
+	}, 		 			 
+
+  "begin..end": {
+		"prefix": "begin..end",
+		"body": [
+			"begin",
+			"  $1",
+      "end;"
+		],
+		"description": "begin..end"
+	}, 
+  
+  "if..then": {
+		"prefix": "if..then",
+		"body": [
+			"if $1 then"
+		],
+		"description": "if..then"
+	},  
+	
+  "then": {
+		"prefix": "then",
+		"body": [
+			"then",
+			"  $1"			
+		],
+		"description": "then"
+	},  
+  
+  "if..then..else": {
+		"prefix": "if..then..else",
+		"body": [
+			"if $1 then", 
+      "",
+      "else"
+		],
+		"description": "if..then..else"
+	},   
+	
+  "then..else": {
+		"prefix": "then..else",
+		"body": [
+			"then", 
+      "  $1",
+      "else"
+		],
+		"description": "then..else"
+	}, 	
+  
+  "if..then..begin..end": {
+		"prefix": "if..then..begin..end",
+		"body": [
+			"if $1 then",
+      "begin",
+      "",
+      "end;"      
+		],
+		"description": "if..then..begin..end"
+	}, 
+	
+  "then..begin..end": {
+		"prefix": "then..begin..end",
+		"body": [
+			"then",
+      "begin",
+      "  $1",
+      "end;"      
+		],
+		"description": "then..begin..end"
+	}, 	
+  
+  "if..then..begin..end..else..begin..end": {
+		"prefix": "if..then..begin..end..else..begin..end",
+		"body": [
+			"if $1 then",
+      "begin",
+      "",
+      "end",
+      "else",
+      "begin",
+      "",
+      "end;"      
+		],
+		"description": "if..then..begin..end..else..begin..end"
+	},  
+	
+  "then..begin..end..else..begin..end": {
+		"prefix": "then..begin..end..else..begin..end",
+		"body": [
+			"then",
+      "begin",
+      "  $1",
+      "end",
+      "else",
+      "begin",
+      "",
+      "end;"      
+		],
+		"description": "then..begin..end..else..begin..end"
+	},  	
+  
+  "while..do": {
+		"prefix": "while..do",
+		"body": [
+			"while $1 do" 
+		],
+		"description": "while..do"
+	},  
+	
+  "do": {
+		"prefix": "do",
+		"body": [
+			"do",
+			"  $1" 
+		],
+		"description": "do"
+	},  	
+  
+  "repeat..until": {
+		"prefix": "repeat..until",
+		"body": [
+			"repeat",
+      "  $1", 
+      "until"
+		],
+		"description": "repeat..until"
+	},  
+
+  "until": {
+		"prefix": "until",
+		"body": [
+			"until"
+		],
+		"description": "until"
+	},   
+	
+  "private": {
+		"prefix": "private",
+		"body": [
+			"private"
+		],
+		"description": "private"
+	},  
+			 
+  "protected": {
+		"prefix": "protected",
+		"body": [
+			"protected"
+		],
+		"description": "protected"
+	},  		 
+ 
+  "public": {
+		"prefix": "public",
+		"body": [
+			"public"
+		],
+		"description": "public"
+	},  		 
+ 
+   "published": {
+		"prefix": "published",
+		"body": [
+			"published"
+		],
+		"description": "published"
+	},  
+	
+   "strict private": {
+		"prefix": "strict private",
+		"body": [
+			"strict private"
+		],
+		"description": "strict private"
+	}, 	 
+   
+   "strict protected": {
+		"prefix": "strict protected",
+		"body": [
+			"strict protected"
+		],
+		"description": "strict protected"
+	}, 	
+	
+   "class": {
+		"prefix": "class",
+		"body": [
+			"class"
+		],
+		"description": "class"
+	}, 
+	
+   "record": {
+		"prefix": "record",
+		"body": [
+			"record"
+		],
+		"description": "record"
+	}, 	
+	
+   "interface": {
+		"prefix": "interface",
+		"body": [
+			"interface"
+		],
+		"description": "interface"
+	}, 					   
+   
+   "implementation": {
+		"prefix": "implementation",
+		"body": [
+			"implementation"
+		],
+		"description": "implementation"
+	}, 	
+	
+   "function": {
+		"prefix": "function",
+		"body": [
+			"function"
+		],
+		"description": "function"
+	}, 	 
+	
+   "procedure": {
+		"prefix": "procedure",
+		"body": [
+			"procedure"
+		],
+		"description": "procedure"
+	},
+	
+   "class procedure": {
+		"prefix": "class procedure",
+		"body": [
+			"class procedure"
+		],
+		"description": "class procedure"
+	}, 
+	
+   "class function": {
+		"prefix": "class function",
+		"body": [
+			"class function"
+		],
+		"description": "class function"
+	},	
+	
+   "initialization": {
+		"prefix": "initialization",
+		"body": [
+			"initialization"
+		],
+		"description": "initialization"
+	},	
+	
+   "finalization": {
+		"prefix": "finalization",
+		"body": [
+			"finalization"
+		],
+		"description": "finalization"
+	},	
+	
+   "type": {
+		"prefix": "type",
+		"body": [
+			"type"
+		],
+		"description": "type"
+	},	
+	
+   "uses": {
+		"prefix": "uses",
+		"body": [
+			"uses"
+		],
+		"description": "uses"
+	},	
+	
+   "cdecl": {
+		"prefix": "cdecl",
+		"body": [
+			"cdecl"
+		],
+		"description": "cdecl"
+	},	
+	
+   "stdcall": {
+		"prefix": "stdcall",
+		"body": [
+			"stdcall"
+		],
+		"description": "stdcall"
+	},	
+	
+   "external": {
+		"prefix": "external",
+		"body": [
+			"external"
+		],
+		"description": "external"
+	},		
+	
+   "static": {
+		"prefix": "static",
+		"body": [
+			"static"
+		],
+		"description": "static"
+	},	
+	
+   "virtual": {
+		"prefix": "virtual",
+		"body": [
+			"virtual"
+		],
+		"description": "virtual"
+	},	
+	
+   "override": {
+		"prefix": "override",
+		"body": [
+			"override"
+		],
+		"description": "override"
+	},	
+	
+   "reintroduce": {
+		"prefix": "reintroduce",
+		"body": [
+			"reintroduce"
+		],
+		"description": "reintroduce"
+	},
+	
+   "overload": {
+		"prefix": "overload",
+		"body": [
+			"overload"
+		],
+		"description": "overload"
+	},									 		  
+   
+  "try..finally..end": {
+		"prefix": "try..finally..end",
+		"body": [
+			"try",
+      "  $1", 
+      "finally",
+      "  $2",
+      "end;"
+		],
+		"description": "try..finally..end"
+	},  
+	
+  "finally..end": {
+		"prefix": "finally..end",
+		"body": [
+      "finally",
+      "  $1",
+      "end;"
+		],
+		"description": "finally..end"
+	},  	
+  
+  "try..except..end": {
+		"prefix": "try..except..end",
+		"body": [
+			"try",
+      "  $1", 
+      "except",
+      "  on E: Exception do",
+      "  begin",
+      "    $2",
+      "  end;",
+      "end;"
+		],
+		"description": "try..except..end"
+	},    
+	
+  "except..end": {
+		"prefix": "except..end",
+		"body": [
+			"except",
+      "  on E: Exception do",
+      "  begin",
+      "    $1",
+      "  end;",
+      "end;"
+		],
+		"description": "try..except..end"
+	},	  
+  
+  "try..except..finally..end": {
+		"prefix": "try..except..finally..end",
+		"body": [
+			"try",
+      "  try",
+      "    $1", 
+      "  except",
+      "    on E: Exception do",
+      "    begin",
+      "      $2",
+      "    end;",
+      "  end;",
+      "finally",
+      "  $3",
+      "end;"
+		],
+		"description": "try..except..finally..end"
+	},
+	
+  "Unit for class": {
+		"prefix": "Unit for class",
+		"body": [
+			"unit $1;",
+			"",
+			"interface", 
+			"",
+			"type", 
+			"  T$1 = class",
+			"  ",
+			"  end;",
+			"", 
+			"implementation",
+			"",
+			"end."
+		],
+		"description": "unit..interface..type..implementation..end"
+	},	 
+
+  "Property with getter and setter": {
+		"prefix": "Property with getter and setter",
+		"body": [
+		   "procedure Set${Name}(const Value: ${TType});",
+	      "function Get${Name}: ${TType};",
+	      "property ${Name}: ${TType} read Get${Name} write Set${Name};"
+		],
+		"description": "Property with getter and setter"
+	}, 
+  
+  "Property with getter": {
+		"prefix": "Property with getter",
+		"body": [
+	      "function Get${Name}: ${TType};",
+	      "property ${Name}: ${TType} read Get${Name};"
+		],
+		"description": "Property with getter"
+	},
+  
+  "Property read and write for member variable": {
+		"prefix": "Property read and write for member variable",
+		"body": [
+		   "F${Name}: ${TType};",
+	      "property ${Name}: ${TType} read F${Name} write F${Name};"
+		],
+		"description": "Property read and write for member variable"
+	},   
+  
+  "Property readonly for member variable": {
+		"prefix": "Property readonly for member variable",
+		"body": [
+		   "F${Name}: ${TType};",
+	      "property ${Name}: ${TType} read F${Name};"
+		],
+		"description": "Property readonly for member variable"
+	},	
+	
+  "Create..Try..Finally..Free": {
+		"prefix": "Create an object and free it in finally block",
+		"body": [
+		   "${ObjectName} := ${TObject}.Create($1);",
+	      "try",
+		  "  $2",
+		  "finally",
+		  "  ${ObjectName}.Free;",
+		  "end;"
+		],
+		"description": "Create an object and free it in finally block"
+	}			     
+} 

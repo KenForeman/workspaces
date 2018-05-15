@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Blueprint",
+	"displayName": "Blueprint Theme",
+	"description": "Blueprint Theme ported from the Blueprint TextMate Theme",
+	"version": "0.0.2",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Blueprint/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Blueprint",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Blueprint.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "78ea23c6-e0ee-4665-bbcf-349963daa319",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

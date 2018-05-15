@@ -1,0 +1,27 @@
+{
+	"name": "theme-glacier",
+	"displayName": "Glacier",
+	"description": "Glacier theme ported from SublimeText",
+	"version": "0.0.1",
+	"publisher": "Kal",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Glacier",
+				"uiTheme": "vs-dark",
+				"path": "./themes/glacier.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "2cfd910b-083a-47c0-8ae1-03f40e26b6ae",
+		"publisherId": "b7326748-d5b7-4655-b55b-107a50e8bc17",
+		"publisherDisplayName": "Kal"
+	}
+}

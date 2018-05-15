@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Colonoscopy",
+	"displayName": "Colonoscopy Theme",
+	"description": "Colonoscopy Theme ported from the Colonoscopy TextMate Theme",
+	"version": "0.0.2",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Colonoscopy/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Colonoscopy",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Colonoscopy.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f76dd5be-80b9-4687-bf62-1553057e059a",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

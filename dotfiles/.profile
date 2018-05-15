@@ -14,10 +14,14 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+## fzf Ctrl-R history goodness
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 ## Visual Studio Code goodness: https://code.visualstudio.com/docs/setup/mac
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias rgrep='grep --color=auto -Iir $1'
 alias grep='grep --color=auto'
 alias grepno="grep --color=never -n -E '.*'"
 alias ls='ls -G'
