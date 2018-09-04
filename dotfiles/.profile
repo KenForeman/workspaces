@@ -5,6 +5,16 @@ export BLOCKSIZE=1k
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+## AWS Deployment Jumphosts
+function sshaws {
+  if [ -z "$1" ]; then
+    echo "Please pass an environment [dev, qa, prod]"
+    return 1
+  else
+    ssh hopper-$1.cloud.sophos -L 8443:localhost:9090
+  fi
+}
+
 ## PowerLine Shell (git) https://powerline.readthedocs.io/en/latest/installation.html
 function _update_ps1() {
     PS1=$(powerline-shell $?)
@@ -57,3 +67,4 @@ alias mvim='/Applications/mvim --remote-tab-silent'
 alias nomore='find ./ -iname .DS_Store -delete'
 ww () { /usr/bin/curl http://wttr.in/"$@" ; }
 alias ytdl='youtube-dl -f bestaudio --extract-audio --audio-format mp3 -l'
+alias home='ssh kenforeman.dynalias.com'
